@@ -1,0 +1,86 @@
+<div class="nav navbar navbar-light navbar-light bg-primary">
+  <div class="container-fluid">
+    <h3 class="text-white">Angular CRUD</h3>
+    <div class="d-flax">
+      <div class="button btn btn-warning"  (click)=" clickAddPerson()"  data-toggle="modal" data-target="#exampleModal" >Add Person</div>
+    </div>
+  </div>
+</div>
+
+
+
+<div class="container" >
+  <div class="col-md-4 float-left mt-5" *ngFor ="let row of personData">
+    <div class="card" style="width: 20rem;">
+      <img class="card-img-top p-4" src="{{row.avatar}}" alt="">
+        <div class="card-body">
+            <h5 class="card-title ml-4"><a href="" (click)="onEdit(row)" type="button" data-toggle="modal" data-target="#exampleModal">{{row.firstName}}{{row.lastName}}</a></h5>
+            <p class="card-text ml-4"><b>Email : </b>{{row.email}}<br>
+            <span><b>Age : </b><td>{{row.dob | Age}}</td></span><br>
+            <span><b>Country : </b>{{row.salary}}</span></p>
+              <div class="ml-4">
+                <button  (click)="onEdit(row)" type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-info">Edit</button>
+                <button (click)="deletePerson(row)" class="btn btn-danger mx-3">Delete</button>
+              </div>
+
+        </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Employee Details</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form [formGroup] = "formValue">
+          <div class="form-group">
+            <label for="First-Name">First Name</label>
+            <input type="text" class="form-control" formControlName="firstName" aria-describedby="emailHelp" >
+          </div>
+          <div>
+          <label for="LastName">Last Name</label>
+          <input type="text" class="form-control" formControlName="lastName" aria-describedby="emailHelp">
+        </div>
+        <div>
+          <label for="avatar">Avatar</label>
+          <input type="text" class="form-control" formControlName="avatar" aria-describedby="emailHelp" placeholder="Set Image Copy Image Address">
+        </div>
+          <div>
+            <label for="First-Name">Email</label>
+            <input type="email" class="form-control" formControlName="email" aria-describedby="emailHelp" >
+          </div>
+          <div class="form-group">
+            <label for="Mobile_No">DOB</label>
+            <input type="date" class="form-control" formControlName="dob" id="Mobile_No" >
+          </div>
+          <select class="form-control"  formControlName="salary" >
+            <option>India</option>
+            <option>USA</option>
+            <option>Japan</option>
+            <option>Shri Lanka</option>
+            <option>China</option>
+            <option>Zimbabwe</option>
+
+          </select>
+
+        </form>
+      </div>
+
+      <div class="modal-footer">
+        <button type="button" data-toggle="modal" data-target="#exampleModal"  id="cancel" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" *ngIf="showAdd" class="btn btn-primary" (click)="postPersonDetails()">Add</button>
+        <button type="button" *ngIf="showupdate" class="btn btn-primary" (click)="updatePersonDetails()">Update</button>
+
+      </div>
+    </div>
+  </div>
+</div>

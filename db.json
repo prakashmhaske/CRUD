@@ -1,0 +1,53 @@
+{
+  "posts": [
+    {
+      "firstName": " Siddharth",
+      "lastName": "Vaidya",
+      "avatar": "https://media-exp1.licdn.com/dms/image/C4E03AQHVkOmTVf2Gfw/profile-displayphoto-shrink_800_800/0/1627903024330?e=1647475200&v=beta&t=dzTwp5qBYnxxnvRQ_ZOcopolg71gSSs38HDNAq1ckhg",
+      "email": "siddharth@gmail.com",
+      "id": 15,
+      "dob": "1995-06-28",
+      "salary": "India"
+    },
+    {
+      "firstName": "Tejas",
+      "lastName": "Sadaphal",
+      "avatar": "https://media-exp1.licdn.com/dms/image/C5603AQEAy68lN2crCA/profile-displayphoto-shrink_800_800/0/1640765239607?e=1647475200&v=beta&t=zyUwwfOT-r_eW38qigVaqPQhJ0lO7QnPU1Tg9_uah2g",
+      "email": "tejas@gmail.com",
+      "id": 18,
+      "dob": "1997-04-15",
+      "salary": "india"
+    },
+    {
+      "firstName": "Shrikrushna",
+      "lastName": "Ghodake",
+      "avatar": "https://media-exp1.licdn.com/dms/image/C5603AQEJNU7C_Q-Zrg/profile-displayphoto-shrink_200_200/0/1632394725549?e=1647475200&v=beta&t=3DICVinAhK_d9sqBgkEzkaQS0ncV5TAcLq_5QZkji3Y",
+      "email": "Shrikrushan@gmail.com",
+      "dob": "1997-06-01",
+      "salary": "india",
+      "id": 19
+    },
+    {
+      "firstName": "Rahul",
+      "lastName": "Hajare",
+      "avatar": "https://media-exp1.licdn.com/dms/image/C4E03AQGoZAf4hj_LWg/profile-displayphoto-shrink_200_200/0/1635909782346?e=1647475200&v=beta&t=8PCxmVFiWhCV_U3U43M7KuclZRIBPVoF3QQt5haesiE",
+      "email": "rahul@gmail.com",
+      "dob": "1998-01-01",
+      "salary": "india",
+      "id": 20
+    },
+    {
+      "firstName": "Nitin",
+      "lastName": "Sonawane",
+      "avatar": "https://media-exp1.licdn.com/dms/image/C4E03AQGLCccsMbNVaQ/profile-displayphoto-shrink_200_200/0/1636388630633?e=1647475200&v=beta&t=2MWFGjKEXCnGcqGy8Er2r9j7-uB-BhQi8VSL606CrAg",
+      "email": "nitin@gmail.com",
+      "dob": "1997-08-28",
+      "salary": "india",
+      "id": 21
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
